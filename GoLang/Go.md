@@ -71,3 +71,31 @@ func main () {
 ```
 
 _func_ is the keyword that you will use when creating functions in GO. This is the only way to declare functions so do not forget
+
+## Variables
+
+There are a couple of ways that variables can be made. One way is to just declare them like so.
+
+```Go
+var exampleVar string
+```
+
+With this way, you are creating the variable and stating what type of value it will be taking
+
+```go
+var exampleVar string = "Hello World"
+```
+
+This one is the same as the first example, except that you are also setting the variable to be equal to a value (that matches the stated data Type)
+
+```go
+var exampleVar = "Hello World"
+```
+
+This looks like it is the same as the previous example. However, the data type is not specified. This is called a _inferred variable_ ( not actually sure what its called but the data type is inferred by the data it is set to )
+
+```go
+var exampleVar := "seven"
+```
+
+Last but not least is the short handed way of creating a variable. This is also a inferred variable where I am declaring and setting the variable to a value
