@@ -1,3 +1,4 @@
+
 package main
 
 import "fmt"
@@ -17,6 +18,11 @@ func addingNums() {
 	}
 }
 
+func looping() {
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+}
 func adding(a int, b int) {
 	fmt.Println(a + b)
 }
@@ -28,4 +34,5 @@ func main() {
 	fmt.Println(name)
 	adding(5, 10)
 	addingNums()
+	looping()
 }
