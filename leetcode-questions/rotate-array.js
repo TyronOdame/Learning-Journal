@@ -34,11 +34,6 @@ Could you do it in-place with O(1) extra space?
 
 */
 
-/**
- * @param {number[]} nums
- * @param {number} k
- * @return {void} Do not return anything, modify nums in-place instead.
- */
 var rotate = function (nums, k) {
   const n = nums.length;
   k %= n;
