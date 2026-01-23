@@ -26,3 +26,17 @@ class Solution:
             if t.find(char) == -1:
                 return False
         return True
+
+
+# two pointer approach
+
+
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        i = 0  # pointer for s
+
+        for char in t:
+            if i < len(s) and char == s[i]:
+                i += 1
+
+        return i == len(s)
