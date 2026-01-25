@@ -26,10 +26,14 @@ Explanation: The sum of 2 and 4 is 6. Therefore index1 = 1, index2 = 3. We retur
 
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        left, right = 0, len(numbers) - 1
 
-        for i in range(len(numbers)):
-            for j in range(i + 1, len(numbers)):
-                if numbers[i] + numbers[j] == target:
-                    return [i + 1, j + 1]  # 1-indexed
+        while left < right:
+            s = numbers[left] + numbers[right]
 
-        return []
+            if s == target:
+                return [left + 1, right + 1]  # 1-indexed
+            elif s < target:
+                left += 1
+            else:
+                right -= 1
