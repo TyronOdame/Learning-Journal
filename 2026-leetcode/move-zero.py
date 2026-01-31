@@ -32,3 +32,6 @@ class Solution:
                 nums[write] = nums[read]
                 write += 1
             read += 1
+
+        for i in range(write, len(nums)):
+            nums[i] = 0
