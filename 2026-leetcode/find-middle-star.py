@@ -15,6 +15,9 @@ Explanation: As shown in the figure above, node 2 is connected to every other no
 
 """
 
+from typing_extensions import List
+
+
 class Solution:
     def findCenter(self, edges: List[List[int]]) -> int:
         a, b = edges[0]
